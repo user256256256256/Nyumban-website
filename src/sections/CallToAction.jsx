@@ -48,7 +48,7 @@ const CallToAction = () => {
         <Button label="Download Now" iconUrl={appleIcon} />
         <Button label="Download Now" iconUrl={android} />
 
-        <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
+        <div className="flex justify-start items-start flex-wrap w-full max-sm:mt-10 mt-20 gap-16 max-sm:gap-10">
           {statistics.map((stat, index) => (
             <div key={index}>
               <p className="text-[36px] text-vivid-orange font-palanquin font-bold">
@@ -71,12 +71,12 @@ const CallToAction = () => {
 
         {selectedCaption && (
           <div className="mt-4 mx-2">
-            <p className="text-[24px] font-bold text-clip animate-typewriter">{selectedCaption.text}</p>
-            <p className="mt-2 text-slate-gray">{selectedCaption.description}</p>
+            <p className="text-[24px] max-sm:text-[15px] font-bold text-clip animate-typewriter">{selectedCaption.text}</p>
+            <p className="mt-2 max-sm:text-[12px]  text-slate-gray">{selectedCaption.description}</p>
           </div>
         )}
 
-        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6 ">
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[5%] max-sm:px-2 ">
           {mockups.map((mockup, index) => (
             <div key={index}>
               <SlideCard

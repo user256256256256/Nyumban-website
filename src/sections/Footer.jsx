@@ -20,7 +20,7 @@ const Footer = () => {
             <p className='mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm'>
               {footerCaption.description}
             </p>
-            <div className='flex items-center gap-5 mt-8 '>
+            <div className='flex flex-wrap items-center gap-5 mt-8 '>
               {socialMedia.map((icon) => (
                 <div
                   className='flex justify-center items-center w-10 h-10 bg-white rounded-full transition-transform duration-200 hover:scale-105'
