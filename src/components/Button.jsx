@@ -4,10 +4,15 @@ const Button = ({
     backgroundColor,
     textColor,
     borderColor,
-    fullWidth
+    fullWidth,
+    onClick, 
+    disable 
 }) => {
   return (
-    <button type="button"
+    <button 
+        type="button"
+        onClick={onClick}
+        disabled={disable}
         className={`flex justify-center items-center my-1 gap-2 px-7 py-4 sm:py-2 max-sm:py-1.5 border font-montserrat text-lg leading-none transition-transform duration-200 hover:scale-105 hover:bg-gradient-to-r hover:from-vivid-orange hover:to-yellow-400 animate-bounce-once
             ${
             backgroundColor

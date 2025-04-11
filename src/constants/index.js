@@ -9,7 +9,7 @@ export const navLinks = [
 ];
 
 export const npsDefinition = {
-    definition: 'Nyumbani Property Services (NPS) is a mobile app real tailored to meet the needs of the Ugandan market. It provides a mobile-optimized solution for renting properties in Uganda, connecting landlords and tenants through a seamless and efficient digital experience.'
+    definition: 'Nyumbani Property Solutions(NPS) is a mobile app real tailored to meet the needs of the Ugandan market. It provides a mobile-optimized solution for renting properties in Uganda, connecting landlords and tenants through a seamless and efficient digital experience.'
 }
 
 export const getStarted = {
