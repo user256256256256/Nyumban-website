@@ -1,37 +1,31 @@
-import { Nav } from './components'
+/**
+ * Copyright (c) 2025 NPS. All rights reserved.
+ * 
+ * This script is part of the NPS project and is proprietary software.
+ * Unauthorized copying, modification, or distribution, via any medium,
+ * is strictly prohibited. Licensed under Proprietary Software.
+ *
+ * This script defines the main structure of the NPS landing page.
+ * It organizes key sections , integrates navigation, and ensures 
+ * a clean and responsive layout using Tailwind utility classes.
+ *
+ * Author: Eng Ibn Muzamir
+ */
 
-import {
-  CallToAction,
-  GettingStarted,
-  About,
-  Solutions,
-  Newsletter,
-  Footer
-} from './sections'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import {Home, Faqs} from "./pages"
+import Layout from "./layouts/Layout"
 
 const App = () => {
   return (
-    <main className='relative bg-charcoal-black text-white '>
-      <Nav />
-      <section className='xl:padding-l wide:padding-r padding-b'>
-        <CallToAction />
-      </section>
-      <section className='padding'>
-        <GettingStarted />
-      </section>
-      <section className='padding'>
-        <About />
-      </section>
-      <section className='padding-x py-10'>
-        <Solutions />
-      </section>
-      <section className='padding-x sm:py-32 py-16 w-full'>
-        <Newsletter />
-      </section>
-      <section className='bg-navy-blue padding-x padding-t pb-8'>
-        <Footer />
-      </section>
-    </main>
+    <Router basename="/Nyumbani-verified">
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} /> 
+          <Route path="faqs" element={<Faqs />} />
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 

@@ -33,8 +33,8 @@ const CallToAction = () => {
           {npsMotto[0].motto1}
         </p>
 
-        <h1 className="mt-10 font-palanquin text-[76px] max-sm:text-[22px] z-10 max-sm:leading-[42px] font-bold animate-slide-in-left">
-          <span className="xl:bg-gunmetal xl:whitespace-nowrap relative pr-10">
+        <h1 className="mt-10 font-palanquin  text-[76px] max-sm:text-[22px] z-10 max-sm:leading-[42px] font-bold animate-slide-in-left">
+          <span className="xl:bg-gunmetal dark:xl:text-white xl:whitespace-nowrap relative pr-10">
             {words[0]} {words[1]} {words[2]}
           </span>
           <br />
@@ -60,7 +60,7 @@ const CallToAction = () => {
         </div>
       </div>
 
-      <div className="relative flex-1 flex flex-col justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-callToAction parallax-bg">
+      <div className="relative flex-1 flex flex-col justify-center items-center xl:min-h-screen max-xl:py-40 bg-orange-dark bg-callToAction parallax-bg">
         <img
           src={bigMockupImg}
           alt="mockup collection"

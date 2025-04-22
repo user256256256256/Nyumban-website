@@ -4,6 +4,7 @@ import SlideCard from './SlideCard'
 import GuideCards from './GuideCards'
 import SolutionCard from './SolutionCard'
 import Alert from './Alert'
+import DropdownMenu from './DropdownMenu'
 
 export {
     Nav,
@@ -11,5 +12,6 @@ export {
     SlideCard,
     GuideCards,
     SolutionCard,
-    Alert
+    Alert, 
+    DropdownMenu
 }

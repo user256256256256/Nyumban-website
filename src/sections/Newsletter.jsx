@@ -42,7 +42,7 @@ const Newsletter = () => {
 
         setTimeout(() => {
           setAlertMessage("")
-        }, 3000)
+        }, 5000)
 
       } catch (error) {
         console.error(error)
@@ -51,7 +51,7 @@ const Newsletter = () => {
 
         setTimeout(() => {
           setAlertMessage("")
-        }, 3000)
+        }, 5000)
 
       }
   

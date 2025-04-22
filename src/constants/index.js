@@ -6,6 +6,8 @@ export const navLinks = [
     { href: "#get-started", label: "Get Started" },
     { href: "#about", label: "About" },
     { href: "#newsletter", label: "Newsletter" },
+    { href: "/faqs", label: "FAQs" },
+    { href: "/Blogs", label: "Blogs" }
 ];
 
 export const npsDefinition = {

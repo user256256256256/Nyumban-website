@@ -1,4 +1,3 @@
-
 const Alert = ({ message, type }) => {
     return (
       <div className={`w-full p-4 rounded-full shadow-md text-center transition-all duration-300 

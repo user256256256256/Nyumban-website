@@ -9,7 +9,7 @@ const SlideCard = ({ imgURL, changeBigMockupImage, bigMockupImg }) => {
     <div
       className={`border-2 rounded-xl ${
         bigMockupImg === imgURL.bigMockup
-          ? "border-vivid-orange"
+          ? "border-gray-300"
           : "border-transparent"
       } cursor-pointer max-sm:flex-1 transition-transform duration-200 hover:scale-105 `}
       onClick={handleClick}
@@ -22,7 +22,7 @@ const SlideCard = ({ imgURL, changeBigMockupImage, bigMockupImg }) => {
           height={103.34}
           className="object-contain"
         />
-        <p className="font-montserrat text-[12px] max-sm:text-[6px] max-sm:mx-0.5 md:text-[10px] lg:text-[12px] mt-2 mx-2 text-center font-semibold text-charcoal-black ">
+        <p className="font-montserrat text-[12px] max-sm:text-[6px] max-sm:mx-0.5 md:text-[10px] lg:text-[12px] mt-2 mx-2 text-center font-semibold text-white ">
           {imgURL.caption.text}
         </p>
       </div>
