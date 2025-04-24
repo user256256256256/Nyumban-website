@@ -48,7 +48,7 @@ const DropdownMenu = () => {
       {isOpen && (
         <div className="absolute mt-2 w-48 bg-navy-blue border border-gray-300 rounded-lg shadow-lg">
           <div className="p-2 flex flex-col">
-            <button className="w-full text-left px-4 py-0 hover:bg-vivid-orange">
+            <button className="w-full text-white text-left px-4 py-0 hover:bg-vivid-orange">
               English
             </button>
           </div>

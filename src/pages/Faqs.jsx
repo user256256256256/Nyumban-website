@@ -1,24 +1,9 @@
 import React, { useState } from 'react'
+import { faqData } from '../constants'
 
-const faqData = [
-  {
-    question: "How do I make an Accordion?",
-    answer:
-      "You can create an accordion using React state to track which item is open, and Tailwind classes to animate the height and visibility. This helps keep the UI clean and interactive.",
-  },
-  {
-    question: "Is this project mobile responsive?",
-    answer:
-      "Yes, it uses Tailwind CSS, which includes mobile-first utility classes to ensure responsiveness on all screen sizes.",
-  },
-  {
-    question: "Where is my data stored?",
-    answer:
-      "Your data is securely stored on our encrypted servers. We follow best practices in data privacy and security compliance.",
-  },
-]
 
 const AccordionItem = ({ question, answer, isOpen, onClick }) => (
+
   <div className="border-b border-gray-300 py-4">
     <button
       className="flex justify-between items-center w-full text-left font-medium text-lg cursor-pointer"
@@ -49,9 +34,10 @@ const Faqs = () => {
   }
 
   return (
-    <section className="mx-auto w-11/12 md:w-4/5 my-10">
-      <h1 className="text-3xl font-bold mb-8 text-center">
-        Frequently Asked Questions <span className="text-blue-600">(FAQs)</span>
+    <main className='relative'>
+      <section className="mx-auto w-11/12 md:w-4/5 my-10 mt-40 ">
+      <h1 className="text-[50px] font-bold mb-8 font-palanquin">
+        Frequently Asked Questions <span className='text-vivid-orange'>(FAQs)</span>
       </h1>
 
       <div className="space-y-4">
@@ -66,6 +52,7 @@ const Faqs = () => {
         ))}
       </div>
     </section>
+    </main>
   )
 }
 

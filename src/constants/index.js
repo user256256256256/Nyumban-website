@@ -10,6 +10,24 @@ export const navLinks = [
     { href: "/Blogs", label: "Blogs" }
 ];
 
+export const faqData = [
+    {
+      question: "How do I make an Accordion?",
+      answer:
+        "You can create an accordion using React state to track which item is open, and Tailwind classes to animate the height and visibility. This helps keep the UI clean and interactive.",
+    },
+    {
+      question: "Is this project mobile responsive?",
+      answer:
+        "Yes, it uses Tailwind CSS, which includes mobile-first utility classes to ensure responsiveness on all screen sizes.",
+    },
+    {
+      question: "Where is my data stored?",
+      answer:
+        "Your data is securely stored on our encrypted servers. We follow best practices in data privacy and security compliance.",
+    },
+  ]
+
 export const npsDefinition = {
     definition: 'Nyumbani Property Solutions(NPS) is a mobile app real tailored to meet the needs of the Ugandan market. It provides a mobile-optimized solution for renting properties in Uganda, connecting landlords and tenants through a seamless and efficient digital experience.'
 }

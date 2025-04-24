@@ -1,7 +1,8 @@
-import { ugFlag } from "../assets/icons";
-import { navLinks } from "../constants";
-import DropdownMenu from "./DropdownMenu.jsx";
-import { Link } from "react-router-dom";
+import { ugFlag } from "../assets/icons"
+import { navLinks } from "../constants"
+import DropdownMenu from "./DropdownMenu.jsx"
+import { Link } from "react-router-dom"
+import SearchButton from "./SearchButton.jsx"
 
 const NavControls = ({ isDarkMode, toggleDarkMode, isMobile = false, onNavLinkClick }) => {
   return (
@@ -11,7 +12,7 @@ const NavControls = ({ isDarkMode, toggleDarkMode, isMobile = false, onNavLinkCl
       font-montserrat text-lg font-medium
     `}
     >
-      {/* Navigation Links */}
+      
       <ul
         className={`${
           isMobile
@@ -49,7 +50,6 @@ const NavControls = ({ isDarkMode, toggleDarkMode, isMobile = false, onNavLinkCl
 
       </ul>
 
-      {/* Dark Mode Toggle */}
       <div className="inline-block">
         <button
           type="button"
@@ -57,7 +57,6 @@ const NavControls = ({ isDarkMode, toggleDarkMode, isMobile = false, onNavLinkCl
           aria-label="Toggle Dark Mode"
           onClick={toggleDarkMode}
         >
-          {/* Sun Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -74,7 +73,6 @@ const NavControls = ({ isDarkMode, toggleDarkMode, isMobile = false, onNavLinkCl
             />
           </svg>
 
-          {/* Moon Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -93,8 +91,9 @@ const NavControls = ({ isDarkMode, toggleDarkMode, isMobile = false, onNavLinkCl
         </button>
       </div>
 
-      {/* Dropdown Menu */}
       <DropdownMenu />
+
+      <SearchButton />
 
       { !isMobile && (
         <a href="/">
@@ -111,7 +110,7 @@ const NavControls = ({ isDarkMode, toggleDarkMode, isMobile = false, onNavLinkCl
       }
       
     </div>
-  );
-};
+  )
+}
 
-export default NavControls;
+export default NavControls
