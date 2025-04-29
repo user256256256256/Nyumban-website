@@ -13,7 +13,7 @@
  */
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import {Home, Faqs} from "./pages"
+import {Home, Faqs, Blogs} from "./pages"
 import Layout from "./layouts/Layout"
 
 const App = () => {
@@ -23,6 +23,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} /> 
           <Route path="faqs" element={<Faqs />} />
+          <Route path="blogs" element={<Blogs />} />
         </Route>
       </Routes>
     </Router>

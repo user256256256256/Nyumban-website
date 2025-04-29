@@ -22,18 +22,7 @@ const NavControls = ({ isDarkMode, toggleDarkMode, isMobile = false, onNavLinkCl
       >
         {navLinks.map((item) => (
           <li key={item.label}>
-            {item.href.startsWith('#') ? (
-              <a 
-                href={item.href}
-                onClick={() => isMobile && onNavLinkClick?.()}
-                className={`
-                ${isDarkMode ? "hover:bg-gray-700" : "hover:bg-slate-gray hover:text-white"} 
-                ${isMobile ? "text-white" : ""}
-                px-4 py-2 rounded-md  transition-all duration-300`}              
-                >
-                {item.label}
-              </a>
-            ) : (
+            {(
               <Link 
                 to={item.href}
                 onClick={ () => isMobile && onNavLinkClick?.()}

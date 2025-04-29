@@ -1,11 +1,9 @@
-import { facebook, instagram, shieldTick, support, truckFast, twitter, youtube, whatsapp, linkedin, tiktok } from "../assets/icons";
+import { facebook, instagram, shieldTick, support, truckFast, twitter, youtube, whatsapp, linkedin, tiktok, profileIcon } from "../assets/icons";
 import { mockup1, mockup2, mockup3, mockup4, mockup5, mockup6, mockup7, thumbnailMockup1, thumbnailMockup2, thumbnailMockup3 } from "../assets/images";
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#get-started", label: "Get Started" },
-    { href: "#about", label: "About" },
-    { href: "#newsletter", label: "Newsletter" },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
     { href: "/faqs", label: "FAQs" },
     { href: "/Blogs", label: "Blogs" }
 ];
@@ -26,7 +24,16 @@ export const faqData = [
       answer:
         "Your data is securely stored on our encrypted servers. We follow best practices in data privacy and security compliance.",
     },
-  ]
+]
+
+export const tabData = [
+    { label: 'All', content: 'All the latest Nyumbani updates, news and stories.' },
+    { label: 'Tutorials', content: 'Step-by-step guides and tutorials to help you use Nyumbani effectively.' },
+    { label: 'Case Studies', content: 'Success stories and deep dives from real Nyumbani users.' },
+    { label: 'News', content: 'Company announcements, industry news and upcoming changes.' },
+    { label: 'Events', content: 'Workshops, webinars, and community events you shouldn’t miss.' },
+]
+  
 
 export const npsDefinition = {
     definition: 'Nyumbani Property Solutions(NPS) is a mobile app real tailored to meet the needs of the Ugandan market. It provides a mobile-optimized solution for renting properties in Uganda, connecting landlords and tenants through a seamless and efficient digital experience.'
@@ -37,7 +44,7 @@ export const getStarted = {
 }
 
 export const npsMotto = [
-    { motto1: 'Simplifying Renting, list or find a property at no cost'},
+    { motto1: 'Simplifying Renting, finding a property and listing'},
     { motto2: 'Formalizing and modernizing Uganda\'s rental market'}
 ]
 
@@ -162,3 +169,78 @@ export const socialMedia = [
     { src: linkedin, alt: "linkedin logo" },
     { src: tiktok, alt: "tiktok logo" }
 ];
+
+export const blogPosts = [
+  {
+    id: 1,
+    title: 'How to Get Started',
+    category: 'Tutorials',
+    date: '2025-04-01',
+    author: 'Jane Doe',
+    authorImage: profileIcon,
+    description: 'Learn how to quickly set up and start using Nyumbani.',
+    link: '/blog/1',
+  },
+  {
+    id: 2,
+    title: 'Nyumbani Success Story',
+    category: 'Case Studies',
+    date: '2025-03-28',
+    author: 'John Smith',
+    authorImage: profileIcon,
+    description: 'Discover how a local business transformed using Nyumbani.',
+    link: '/blog/2',
+  },
+  {
+    id: 3,
+    title: 'New Features in April',
+    category: 'News',
+    date: '2025-04-10',
+    author: 'Emily Rose',
+    authorImage: profileIcon,
+    description: 'A roundup of all the exciting new features this month.',
+    link: '/blog/3',
+  },
+  {
+    id: 4,
+    title: 'Upcoming Nyumbani Webinar',
+    category: 'Events',
+    date: '2025-04-15',
+    author: 'Samuel Wanjala',
+    authorImage: profileIcon,
+    description: 'Join us for a live session on growing your digital home.',
+    link: '/blog/4',
+  },
+  {
+    id: 5,
+    title: 'Welcome to Nyumbani',
+    category: 'Tutorials',
+    date: '2025-03-15',
+    author: 'Alice Kimani',
+    authorImage: profileIcon,
+    description: 'Your introduction to the Nyumbani platform and what it offers.',
+    link: '/blog/5',
+  },
+  {
+    id: 6,
+    title: 'Our Journey So Far',
+    category: 'Case Studies',
+    date: '2025-02-27',
+    author: 'Brian Oduor',
+    authorImage: profileIcon,
+    description: 'Reflections and milestones in our Nyumbani journey.',
+    link: '/blog/6',
+  },
+  // --- Additional test posts below ---
+  ...Array.from({ length: 100 }, (_, i) => ({
+    id: i + 7,
+    title: `Sample Blog Post #${i + 7}`,
+    category: ['Tutorials', 'News', 'Events', 'Case Studies'][i % 4],
+    date: `2025-03-${(i % 28) + 1}`.padStart(10, '0'),
+    author: `Author ${i + 7}`,
+    authorImage: profileIcon,
+    description: `This is a sample description for blog post #${i + 7}.`,
+    link: `/blog/${i + 7}`,
+  }))
+]
+

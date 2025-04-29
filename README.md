@@ -106,11 +106,9 @@ Only those with access are allowed to Contribute to the Project.
 - Create feature branches
 - Submit pull requests
 
-
 ## **Icons Provide**
 The icons used in the landing page are provided by ICONS8 and a link should be added where their icons are use. 
-"<a target="_blank" href="https://icons8.com/icon/PpSBa7iaIak3/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-"
+"<a target="_blank" href="https://icons8.com/icon/PpSBa7iaIak3/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>"
 
 ## **Copyright**
 © 2025 **NPS**. All rights reserved.

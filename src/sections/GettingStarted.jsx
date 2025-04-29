@@ -1,12 +1,15 @@
+import { useEffect, useState } from "react"
 import { GuideCards } from "../components"
 import { guides, getStarted } from '../constants'
+import { use } from "react"
 
 const GettingStarted = () => {
   return (
         <section id='guides' className='max-container max-sm:mt-12'>
           <div className='flex flex-col justify-start gap-5 '>
-            <h2 className='text-[48px] font-palanquin font-bold'>
+            <h2 className='text-[48px] font-palanquin font-bold relative group'>
             Getting <span className='text-vivid-orange'> Started </span> 
+            <a id="navHash" href="#get-started" className='opacity-0 group-hover:opacity-100 text-slate-gray transition-opacity duration-200'>#</a>
             </h2>
             <p className='lg:max-w-lg mt-2 font-montserrat text-slate-gray'>
               {getStarted.description}

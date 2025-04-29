@@ -5,6 +5,8 @@ import GuideCards from './GuideCards'
 import SolutionCard from './SolutionCard'
 import Alert from './Alert'
 import DropdownMenu from './DropdownMenu'
+import BlogCard from './BlogCard'
+import Pagination from './Pagination'
 
 export {
     Nav,
@@ -13,5 +15,7 @@ export {
     GuideCards,
     SolutionCard,
     Alert, 
-    DropdownMenu
+    DropdownMenu,
+    BlogCard,
+    Pagination
 }

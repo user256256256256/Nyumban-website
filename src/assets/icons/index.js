@@ -1,4 +1,3 @@
-// OS icons 
 import appleIcon from './apple.png'
 import googlePlay from './google-play.png'
 import android from './android.png'
@@ -19,6 +18,7 @@ import linkedin from './linkedin.svg'
 import tiktok from './tiktok.svg'
 import ugFlag from './uganda.png'
 import close from './close.svg'
+import profileIcon from './profile-picture.png'
 
 export {
     hamburger,
@@ -40,5 +40,6 @@ export {
     tiktok,
     android,
     ugFlag,
-    close
+    close, 
+    profileIcon
 }

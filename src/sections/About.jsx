@@ -10,10 +10,11 @@ const About = () => {
           className='flex justify-between items-center max-lg:flex-col gap-10 w-full max-container'
         >
           <div className='flex flex-1 flex-col'>
-            <h2 className='font-palanquin capitalize text-[48px] lg:max-w-lg font-bold'>
+            <h2 className='font-palanquin capitalize text-[48px] lg:max-w-lg font-bold relative group'>
               About Nyumbani  
-              <span className='text-vivid-orange'> Property </span>
-              Services
+              <span className='text-vivid-orange'> Property </span> 
+              Services 
+              <a id="navHash" href="#about" className='opacity-0 group-hover:opacity-100 text-slate-gray transition-opacity duration-200'> #</a>
             </h2>
             <p className='mt-4 lg:max-w-lg info-text transition-transform duration-200 animate-pulse'>
               {aboutCaption.description}
