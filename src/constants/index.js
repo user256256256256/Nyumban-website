@@ -126,36 +126,13 @@ export const solutions = [
         subtext: "Dedicated Support for You. Our support team is always ready to assist both tenants and landlords with any issues."
     },
 ];
-
-export const footerCaption = {
-    description: "This service is dedicated to formalizing and modernizing Uganda's rental market, promoting greater efficiency, transparency, and security for both landlords and tenants."
-}
-
 export const footerLinks = [
     {
-        title: "Lorem",
+        title: "EXPLORE",
         links: [
-            { name: "Lorm ipsum", link: "/" },
-            { name: "Lrem ipsum", link: "/" },
-            { name: "Loem ipsum", link: "/" },
-            { name: "Lore ipsum", link: "/" },
-        ],
-    },
-    {
-        title: "Consectetur",
-        links: [
-            { name: "Consecttur ", link: "/" },
-            { name: "Iipsum", link: "/" },
-            { name: "Consetetur", link: "/" },
-            { name: "Conectetur", link: "/" },
-        ],
-    },
-    {
-        title: "Get in touch",
-        links: [
-            { name: "support@nyumbanipropertyservices.com", link: "mailto:support@nyumbanipropertyservices.com" },
-            { name: "Location: Kampala, Uganda", link: "#" },
-            { name: "customer@nyumbanipropertyservices.com", link: "mailto:customer@nyumbanipropertyservices.com" },
+            { name: "Forum", link: "/" },
+            { name: "Privacy policy", link: "/" },
+            { name: "Code of Conduct", link: "/" },
         ],
     },
 ];
@@ -163,11 +140,8 @@ export const footerLinks = [
 export const socialMedia = [
     { src: facebook, alt: "facebook logo" },
     { src: twitter, alt: "twitter logo" },
-    { src: instagram, alt: "instagram logo" },
     { src: youtube, alt: "youtube logo" },
     { src: whatsapp, alt: "whatsapp logo" },
-    { src: linkedin, alt: "linkedin logo" },
-    { src: tiktok, alt: "tiktok logo" }
 ];
 
 export const blogPosts = [
@@ -236,7 +210,7 @@ export const blogPosts = [
     id: i + 7,
     title: `Sample Blog Post #${i + 7}`,
     category: ['Tutorials', 'News', 'Events', 'Case Studies'][i % 4],
-    date: `2025-03-${(i % 28) + 1}`.padStart(10, '0'),
+    date: `2025-03-${String((i % 28) + 1).padStart(2, '0')}`,
     author: `Author ${i + 7}`,
     authorImage: profileIcon,
     description: `This is a sample description for blog post #${i + 7}.`,
@@ -244,3 +218,54 @@ export const blogPosts = [
   }))
 ]
 
+/* 
+
+{
+  "id": "abc123",
+  "slug": "how-to-get-started",
+  "title": "How to Get Started",
+  "category": "Tutorials",
+  "layout": "tutorial", // key for rendering layout later
+  "authorId": "user1",
+  "publishedDate": "2025-04-01T10:00:00Z",
+  "coverImage": "/images/blogs/get-started.jpg",
+  "content": "# Welcome to Nyumbani\nHere's how you get started...",
+  "tags": ["beginner", "setup"]
+}
+
+{
+  "id": "user1",
+  "name": "Jane Doe",
+  "profileImage": "/images/authors/jane.jpg",
+  "bio": "Tech writer and community builder."
+}
+
+
+Title, author, etc. are stored as structured fields.
+
+✅ Content is stored as:
+
+Rich HTML (if you're using a CMS or markdown parser)
+
+Or Markdown (cleaner and dev-friendly)
+
+🔥 Pro Tip: Markdown is often stored and 
+converted to HTML on the frontend using 
+something like react-markdown.
+
+const BlogDetail = ({ article }) => {
+  switch (article.layout) {
+    case 'tutorial':
+      return <TutorialLayout content={article} />
+    case 'news':
+      return <NewsLayout content={article} />
+    case 'case-study':
+      return <CaseStudyLayout content={article} />
+    default:
+      return <DefaultLayout content={article} />
+  }
+}
+
+Suggested layouts "https://developer.mozilla.org/en-US/blog/global-privacy-control/" non tutorial
+                  "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics" tutorial layout
+*/

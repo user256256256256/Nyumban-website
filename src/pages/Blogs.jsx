@@ -5,7 +5,7 @@ import { BlogCard, Pagination } from '../components'
 const Blogs = () => {
   const [activeTab, setActiveTab] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
-  const postsPerPage = 3
+  const postsPerPage = 6
 
   const activeCategory = tabData[activeTab].label
 
@@ -18,7 +18,6 @@ const Blogs = () => {
   const startIndex = (currentPage - 1) * postsPerPage;
   const endIndex = startIndex + postsPerPage;
   const visiblePosts = filteredPosts.slice(startIndex, endIndex)
-  // const startIndex =
   
   return (
     <main className='relative'>

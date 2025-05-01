@@ -13,7 +13,6 @@ const Home = () => {
   return (
     <main className="relative ">
 
-
         <section id="home" className='xl:padding-l wide:padding-r padding-b'>
         <CallToAction />
         </section>
