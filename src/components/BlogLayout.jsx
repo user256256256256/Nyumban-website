@@ -1,8 +1,14 @@
 import React from 'react'
+import BlogTopBar from './BlogTopBar'
 
 const BlogLayout = ({ children, toc }) => {
   return (
     <main className="w-full flex flex-col md:flex-row px-4 md:px-10 lg:px-20 py-10 gap-2">
+      
+      <div className="block md:hidden">
+        <BlogTopBar />
+      </div>
+
       <aside className="hidden md:block md:w-1/4 sticky top-20 self-start">
         {toc}
       </aside>

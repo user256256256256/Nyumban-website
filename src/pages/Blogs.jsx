@@ -5,7 +5,7 @@ import { BlogCard, Pagination } from '../components'
 const Blogs = () => {
   const [activeTab, setActiveTab] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
-  const postsPerPage = 6
+  const postsPerPage = 10
 
   const activeCategory = tabData[activeTab].label
 

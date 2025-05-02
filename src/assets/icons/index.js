@@ -19,6 +19,7 @@ import tiktok from './tiktok.svg'
 import ugFlag from './uganda.png'
 import close from './close.svg'
 import profileIcon from './profile-picture.png'
+import sidebarIcon from './sidebar.png'
 
 export {
     hamburger,
@@ -41,5 +42,6 @@ export {
     android,
     ugFlag,
     close, 
-    profileIcon
+    profileIcon,
+    sidebarIcon
 }

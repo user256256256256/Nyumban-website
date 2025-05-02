@@ -7,6 +7,7 @@ import Alert from './Alert'
 import DropdownMenu from './DropdownMenu'
 import BlogCard from './BlogCard'
 import Pagination from './Pagination'
+import BlogTopBar from './BlogTopBar'
 
 export {
     Nav,
@@ -17,5 +18,6 @@ export {
     Alert, 
     DropdownMenu,
     BlogCard,
-    Pagination
+    Pagination,
+    BlogTopBar
 }

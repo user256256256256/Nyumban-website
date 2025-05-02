@@ -1,11 +1,10 @@
 import { copyrightSign } from "../assets/icons"
 import { footerLinks, socialMedia } from "../constants"
 
-
 const Footer = () => {
   return (
     <footer className='max-container'>
-      <div className='flex justify-between align-middle text-white-400 mt-0 max-sm:flex-col max-md:flex-col max-md:items-center max-sm:items-center gap-10'>
+<div className='flex flex-col lg:flex-row justify-between items-center text-white-400 mt-0 gap-4 md:gap-6  lg:gap-8'>
 
         <div className='flex justify-start items-center gap-2 font-montserrat cursor-pointer'>
           <img
