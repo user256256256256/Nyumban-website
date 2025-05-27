@@ -13,7 +13,7 @@ const BlogPost = () => {
     <BlogLayout toc={<TableOfContents headings={headings} />}>
       <section className="mt-30">
         <h1 id="intro">How to Get Started</h1>
-        <p>Learn how to quickly set up and start using Nyumbani...</p>
+        <p>Learn how to quickly set up and start using Nyumban...</p>
 
         <h2 id="setup">Setup Instructions</h2>
         <p>Follow these steps to get up and running...</p>

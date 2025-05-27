@@ -11,7 +11,7 @@ const About = () => {
         >
           <div className='flex flex-1 flex-col'>
             <h2 className='font-palanquin capitalize text-[48px] lg:max-w-lg font-bold relative group'>
-              About Nyumbani  
+              About Nyumban  
               <span className='text-vivid-orange'> Property </span> 
               Services 
               <a id="navHash" href="#about" className='opacity-0 group-hover:opacity-100 text-slate-gray transition-opacity duration-200'> #</a>

@@ -1,3 +1,13 @@
+* Copyright (c) 2025 NPS. All rights reserved.
+
+* This script is part of the NPS project and is proprietary software.
+* Unauthorized copying, modification, or distribution, via any medium,
+* is strictly prohibited. Licensed under Proprietary Software.
+
+* Author: Eng Ibn Muzamir
+* Published : 22/May/2025 
+* Last updated : 22/May/2025
+
 # **NPS Landing Page**
 A **modern web application** built with **React, Tailwind CSS, Node.js, and PostgreSQL**, designed to provide a seamless user experience with efficient backend data handling.
 
@@ -77,7 +87,7 @@ PORT=5000
 ## **Setup & Installation**
 1. Clone the repository:
 ```sh
-git clone https://github.com/user256256256256/Nyumbani-verified.git
+git clone https://github.com/user256256256256/Nyumban-verified.git
 ```
 2. Navigate into the project:
 ```sh

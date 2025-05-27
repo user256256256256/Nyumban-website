@@ -10,21 +10,24 @@
  * a clean and responsive layout using Tailwind utility classes.
  *
  * Author: Eng Ibn Muzamir
+ * Published : 22/May/2025 
+ * Last updated : 22/May/2025
  */
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import {Home, Faqs, Blogs, BlogPost} from "./pages"
+import {Home, Faqs, Blogs, BlogPost, TutorialPage} from "./pages"
 import Layout from "./layouts/Layout"
 
 const App = () => {
   return (
-    <Router basename="/Nyumbani-verified">
+    <Router basename="/Nyumban-verified">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} /> 
           <Route path="faqs" element={<Faqs />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="blogPost" element={<BlogPost />} />
+          <Route path="tutorial" element={<TutorialPage />} />
         </Route>
       </Routes>
     </Router>

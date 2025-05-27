@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://user256256256256.github.io/Nyumbani-verified",
+  "homepage": "https://user256256256256.github.io/Nyumban-verified",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

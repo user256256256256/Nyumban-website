@@ -21,6 +21,7 @@ const GettingStarted = () => {
               < GuideCards key={guide.name} {...guide} />
             ))}
           </div>
+
         </section>
   )
 }
