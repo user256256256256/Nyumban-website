@@ -2,7 +2,7 @@ import { sidebarIcon } from '../assets/icons/index.js'
 
 const BlogTopBar = ({ onToggleSidebar }) => {
   return (
-    <div className="w-full mt-20 border-y border-gray-200 sticky top-0 bg-white z-40">
+    <div className="w-full mt-20 border-y border-gray-200 sticky top-0 z-40">
       <div className="flex items-center justify-between px-4 py-2 max-w-screen-xl mx-auto">
         <button
           type="button"

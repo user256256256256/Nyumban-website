@@ -18,14 +18,14 @@ const Button = ({
             backgroundColor
                 ? `${backgroundColor} ${textColor} ${borderColor}`
                 : "bg-transparent text-white border-vivid-orange"
-            } rounded-full ${fullWidth && "w-full"}`} 
+            } rounded-[5px] ${fullWidth && "w-full"}`} 
         >
         {label}
 
         {iconUrl && (
             <img src={iconUrl}
             alt="store-icon"
-            className="ml-2 rounded-full w-6 h-6"
+            className="ml-2 rounded-[5px] w-6 h-6"
             />
         )}
     </button>

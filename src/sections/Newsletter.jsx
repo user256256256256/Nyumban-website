@@ -63,7 +63,7 @@ const Newsletter = () => {
 
   const handleInputChange = (e) => {
     setEmail(e.target.value);
-    setAlertMessage("");  // Clears alert when typing
+    setAlertMessage("");  
   };
 
   return (
@@ -77,7 +77,7 @@ const Newsletter = () => {
         </h3>
 
         <div className="lg:max-w-[40%] w-full">
-          <div className=' flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full'>
+          <div className=' flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-[5px]'>
             <input 
             type='text' 
             placeholder='example@gmail.com' 

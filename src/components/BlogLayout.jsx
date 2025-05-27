@@ -42,7 +42,7 @@ const BlogLayout = ({ children, toc }) => {
 
       <aside
         ref={sidebarRef}
-        className={`fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 shadow-lg transform transition-transform duration-300 z-100 md:hidden ${
+        className={`blog-side-bar fixed top-0 left-0 h-full w-64 bg-white  border-gray-200 shadow-lg transform transition-transform duration-300 z-100 md:hidden ${
           isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         id="sidebar-quicklinks"
@@ -51,7 +51,7 @@ const BlogLayout = ({ children, toc }) => {
         <button
           onClick={closeSidebar}
           aria-label="Close sidebar"
-          className="absolute top-4 right-4 text-2xl font-bold"
+          className="absolute top-4 right-4 text-[24px] font-bold"
         >
           &times;
         </button>

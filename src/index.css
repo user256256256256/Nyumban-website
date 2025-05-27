@@ -70,6 +70,11 @@
      background-color: var(--color-charcoal-black) !important;
      color: var(--color-white) !important;
    }
+
+   html.dark .blog-side-bar {
+    background-color: var(--color-charcoal-black) !important;
+    color: var(--color-white) !important;
+   }
  }
  
  /* Utility classes */
